@@ -1,0 +1,29 @@
+filtering:
+  - protocol: "TCP"
+    src_ip: "any"
+    dest_ip: "192.168.1.1"
+    dest_port: 22
+    action: "allow"
+
+  - protocol: "UDP"
+    src_ip: "any"
+    dest_ip: "192.168.1.1"
+    dest_port: 53
+    action: "allow"
+
+  - protocol: "TCP"
+    src_ip: "any"
+    dest_ip: "any"
+    dest_port: 80
+    action: "deny"
+
+nat:
+  - type: "masquerade"
+    src_ip: "192.168.1.0/24"
+    dest_ip: "any"
+
+security_policies:
+  - name: "SSH Rate Limit"
+    protocol: "TCP"
+    port: 22
+    rate_limit: "5 per minute"

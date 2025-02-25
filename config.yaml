@@ -1,0 +1,25 @@
+jwt_secret: "supersecretkey"
+admin_user: "admin"
+admin_pw_hash: "$2b$12$XXXXXXXXXXXXXXXXXXXXXXX"  # Hash bcrypt dari password admin
+network_interface: "eth0"
+
+# Elasticsearch Logging
+elasticsearch_host: "http://localhost:9200"
+
+# API Key untuk threat intelligence
+otx_api_key: "your-otx-api-key"
+
+# AWS Config
+aws_access_key: "your-aws-access-key"
+aws_secret_key: "your-aws-secret-key"
+aws_region: "us-east-1"
+aws_sg_id: "sg-XXXXXXXX"
+
+# Azure Config
+azure_sub_id: "your-azure-subscription-id"
+azure_resource_group: "your-resource-group"
+azure_nsg_name: "your-nsg-name"
+
+# GCP Config
+gcp_project_id: "your-gcp-project-id"
+gcp_cred_path: "/etc/firewall/gcp_credentials.json"
