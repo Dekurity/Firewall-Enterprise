@@ -186,10 +186,6 @@ int xdp_filter(struct __sk_buff *skb) {
    - **Method:** `GET`
    - **Headers:** `Authorization: Bearer <your_jwt_token>`
 
-## Lisensi
-
-Proyek ini dilisensikan di bawah MIT License - lihat file [LICENSE](LICENSE) untuk detail lebih lanjut.
-
 ## Kontributor
 
 - [Dekurity](https://github.com/dekurity)
